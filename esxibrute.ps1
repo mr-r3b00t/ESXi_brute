@@ -96,7 +96,7 @@ $url = "https://$Target/sdk/"
 # Prepare proxy if specified
 $proxy = $null
 if ($ProxyIP) {
-    $proxy = "http://$ProxyIP:$ProxyPort"
+    $proxy = "http://${ProxyIP}:${ProxyPort}"
     Write-Output "Using proxy: $proxy"
 }
 
